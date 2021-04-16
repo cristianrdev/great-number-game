@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Gran juego de Números!</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Bienvenido al Gran Juego de Números!</h1>
+        <h4>Estoy pensando en un número del 1 al 100</h4>
+        <h4>Adivina!</h4>
+        <form class="" action="/guess" method="post" style="display: {{block_HTML}}">
+            <input class="ingreso" type="" name="number_guess" maxlength="3"> <input class="boton botones3"
+                type='submit' value='Consultar!'>
+
+        </form>
+        <div class="cuadro-resultados">
+            <div class="resultado alto" style="display: {{high_HTML}}">
+                <h1>Muy Alto!!</h1>
+            </div>
+            <div class="resultado bajo" style="display: {{low_HTML}}">
+                <h1>Muy Bajo!!</h1>
+            </div>
+            <div class="resultado correcto" style="display: {{correct_HTML}}">
+                <h1>Acertaste!!</h1><button class="boton " onclick="location.href='/reset' "> Volver a Jugar! </button>
+            </div>
+        </div>
+
+
+
+        <button class="boton botones1" onclick="location.href='/reset' "  style="display: {{block_HTML}} "> Reset </button>
+        
+
+
+    </div>
+</body>
+
+</html>
